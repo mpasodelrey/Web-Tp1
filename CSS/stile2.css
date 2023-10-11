@@ -41,6 +41,7 @@ a {
     justify-content: space-between;
     align-items: center;
     height: 75px;
+    background: var(--first-color);
 }
 
 .logo{
@@ -77,6 +78,44 @@ a {
     color: var(--seven-color);
 }
 
+.home{
+    grid-area: home;
+    background-image: url(../imagenes/Backgroun__Header.jpg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(70, 70, 70);
+    background-blend-mode:soft-light;
+}
+
+.home {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    justify-content: center;
+    padding-left: 5rem;
+} 
+
+.home > h1 {
+    color: var(--first-color);
+    margin: 15px 0 15px 0;
+    font-weight: bold;
+}
+
+.home span {
+    color: var(--seven-color);
+    border-style: double;
+    font-size: 8rem;
+}
+
+.home > p {
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem 5rem 0 0;
+    font-weight: bold;
+}
 
 
 
@@ -89,14 +128,15 @@ a {
     text-align: center;
     
 } 
-.contenedor {
+ .contenedor {
     margin: auto;
     display: grid;
     gap: 15px;
     grid-template-columns: 4fr 2fr;
     grid-template-rows: 1fr 3fr 1fr 2fr;
     grid-template-areas:
-        'header   header  '
+        
+        
         'main     aside   '
         'main     aside   '
         'main     aside   '
@@ -107,7 +147,7 @@ a {
     height: auto;
     /*height: 192vh;*/
 }
-
+ 
 .item1 {
     background-color: #1e272e;
     padding: 10px;
