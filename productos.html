@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/style2.css">
+    <title>Productos</title>
 </head>
 <body>
 
@@ -23,12 +24,12 @@
         </nav>
     </header>
     
-    <section>
+<main>
     <div class="container">
         <h1 class="productos">Productos</h1>
         <div class="contenedor-productos"></div>
         <div class="producto">
-            <img class="producto-imagen" src=".imagenes/productos/copa.jpg" alt="">
+            <img class="producto-imagen" src="imagenes/productos/copa.jpg" alt="">
             <div class="producto-detalles">
                 <h3 class="producto-titulo">Copa del Mundo</h3>
                 <p class="producto-precio">$6500</p>
@@ -36,7 +37,7 @@
             </div>
         </div>
         <div class="producto">
-            <img class="producto-imagen" src=".imagenes/productos/ypf.jpg" alt="">
+            <img class="producto-imagen" src="imagenes/productos/ypf.jpg" alt="">
             <div class="producto-detalles">
                 <h3 class="producto-titulo">Set Ypf</h3>
                 <p class="producto-precio">$0</p>
@@ -44,7 +45,7 @@
             </div>
         </div>
         <div class="producto">
-            <img class="producto-imagen" src=".imagenes/productos/gulf.jpg" alt="">
+            <img class="producto-imagen" src="imagenes/productos/gulf.jpg" alt="">
             <div class="producto-detalles">
                 <h3 class="producto-titulo">Set Gulf</h3>
                 <p class="producto-precio">$0</p>
@@ -52,7 +53,7 @@
             </div>
         </div>
         <div class="producto">
-            <img class="producto-imagen" src=".imagenes/productos/castrol.jpg" alt="">
+            <img class="producto-imagen" src="imagenes/productos/castrol.jpg" alt="">
             <div class="producto-detalles">
                 <h3 class="producto-titulo">Set Castrol</h3>
                 <p class="producto-precio">$0</p>
@@ -60,42 +61,37 @@
             </div>
         </div>
     </div>
-</section>
+</main>
 <section class="category-body">
     <div class="container">
         <h3>Categorias</h3>
-        <li><button class="boton-categoria">Mates</button></li>
+        <li><button class="boton-categoria active">Mates</button></li>
         <li><button class="boton-categoria">Oficina</button></li>
         <li><button class="boton-categoria">Cocina</button></li>
         <li><button class="boton-categoria">Insumos</button></li>
         <li><a href="carrito.html">carrito <span class="numerito">0</span></a></li>
-    </div>
         </div>
-        <div id="filters" data-storage="filters-nav">
-            <h3 class="">Filtrar por</h3>
-            <div>Color</div>
-            <label name="Color" data-filter-value="Amarillo">
-                <span class="checkbox">
-                    <input type="checkbox" autocomplete="off">
-                    <span class="checkbox-icon"></span>
-                    <span class="checkbox-text">Amarillo (1)</span>
-
-                    <span class="checkbox-color" style="background-color: #FFEE02;"></span>
-                </span>
-                <p></p>
-            </label>
-            <label name="Color" data-filter-value="Azul">
-                <span class="checkbox">
-                    <input type="checkbox" autocomplete="off">
-                    <span class="checkbox-icon"></span>
-                    <span class="checkbox-text">Azul (1)</span>
-
-                    <span class="checkbox-color" style="background-color: #0000DC;"></span>
-                </span>
-            </label>
-        </div>
-        </div>
-    </div>
 </section>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=5491135724299&text=Hola, me gustaria Obtener más información" class="float pulse" target="_blank">
+<i class="fa fa-whatsapp my-float "></i>
+</a>
+
+<footer class="footer">
+    <nav class="nav_foot">
+        <a class="nav_footer" href="https:/www.facebook.com" target="_blank"><i class="fa fa-facebook"
+                aria-hidden="true"></i></a>
+        <a class="nav_footer" href="https:/www.pinterest.com" target="_blank"><i class="fa fa-pinterest"
+                aria-hidden="true"></i></a>
+        <a class="nav_footer" href="https:/www.instagram.com/Matz3d_" target="_blank"><i class="fa fa-instagram"
+                aria-hidden="true"></i></a>
+        <a class="nav_footer" href="https:/www.tiktok.com/@matz3d_" target="_blank"><i class="bi bi-tiktok"
+                aria-hidden="true"></i></a>
+    </nav>
+
+    <p>Derechos reservados @2023</p>
+</footer>
+
 </body>
 </html>
