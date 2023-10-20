@@ -1,0 +1,11 @@
+.productos {
+    box-sizing: inherit;
+    display: flex;
+    flex-direction: row;
+    color: black;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    margin-top: 0px;
+    position: relative;
+}
