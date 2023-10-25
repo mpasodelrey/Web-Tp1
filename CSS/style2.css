@@ -37,11 +37,16 @@ a {
 /*******************   INDEX STYLES   ****************************/
 
 .item1{
+    top: 0;
+    position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 75px;
     background: var(--first-color);
+    background-color: #1e272e;
+    padding: 10px;
+    grid-area: header;
 }
 
 .logo{
@@ -79,23 +84,19 @@ a {
 }
 
 .home{
-    grid-area: home;
     background-image: url(../imagenes/Backgroun__Header.jpg);
     height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgb(70, 70, 70);
     background-blend-mode:soft-light;
-}
-
-.home {
-  
     display: flex;
     flex-direction: column;
     align-items: start;
     text-align: left;
     justify-content: center;
     padding-left: 5rem;
+    grid-area: home;
 } 
 
 .home > h1 {
@@ -115,78 +116,59 @@ a {
     text-align: center;
     padding: 3rem 5rem 0 0;
     font-weight: bold;
-}
-
-
-
-
-
-
-.nav_footer{
-    color: white;
-    padding-top: 20px;
-    text-align: center;
-    
 } 
- .contenedor {
-    margin: auto;
+.contenedor {
+    margin:  auto;
     display: grid;
-    gap: 15px;
+    gap:15px;
     grid-template-columns: 4fr 2fr;
-    grid-template-rows: 1fr 3fr 1fr 2fr;
+    grid-template-rows: 1fr 4fr 3fr 1fr 1fr;
     grid-template-areas:
-        
-        
-        'main     aside   '
-        'main     aside   '
-        'main     aside   '
-        'cliente  cliente  '
-        'footer   footer   '
-        'footer   footer   '
+    'header   header  '
+    'home   home  '
+    'home   home  '
+    'home   home  '
+    'home   home  '
+    'main     aside   '
+    'main     aside   '
+    'main     aside   '
+    'cliente  cliente'
+    'footer   footer   '
+    
     ;
     height: auto;
     /*height: 192vh;*/
-}
- 
-.item1 {
-    background-color: #1e272e;
-    padding: 10px;
-    position: sticky;
-    grid-area: header;
 
 }
-
-.item2 {
+.item2 {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border: 1px solid #000000;
     background-color: #fff;
     grid-area: main;
-    font-size: 20px;
-
+    font-size: 22px;
 }
-
 .article {
-
     background: #808e9b;
-    padding: 25px;
-    margin: 17px;
     color: #dfe6e9;
-
+    margin: auto 20px;
+    padding: 20px; 
 }
-
-.article1 {
+.article1{
     border: solid black 1px;
-    padding: 25px;
-    margin: 17px;
     color: black;
+    margin: auto 20px;
+    padding: 20px;
 }
 
 .item3 {
+    display: flex;
     background-color: #485460;
     color: #ffffff;
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     grid-area: aside;
-    display: block;
     font-size: 20px;
 }
 
@@ -194,9 +176,12 @@ a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 40px;
+    margin: 20px 20px 5px 20px;
 }
-
+aside div{
+    margin: 5px 30px 20px;
+}
+/*--------CLIENTES-------*/
 .item4 {
 
     background-color: #E9ECF4;
@@ -204,11 +189,10 @@ a {
     justify-content: center;
     text-align: center;
 }
-
+/*-------PIE-----------*/
 .footer {
     grid-area: footer;
     padding: 20px;
-
 }
 
 footer {
@@ -219,7 +203,7 @@ footer {
     color: white;
 }
 
-
+/*
 @media screen and (max-width:700px) {
     .contenedor {
         grid-template-rows: 1fr 4fr 2fr 1fr;
@@ -254,4 +238,4 @@ footer {
     .item4 {
         display: none;
     }
-}
+}*/
